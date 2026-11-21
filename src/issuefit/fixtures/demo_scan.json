@@ -1,0 +1,103 @@
+{
+  "note": "Synthetic fixture: shapes copied from real GitHub API responses, values invented for a deterministic demo. Not live data and not a benchmark.",
+  "as_of": "2026-11-21T14:00:00Z",
+  "issues": [
+    {
+      "repo": "example-org/ha-mcp",
+      "number": 3166,
+      "title": "[FEATURE] bulk entity update: optional compact response without per-entity payload",
+      "body": "### What\n`ha_set_entity` returns one entry per entity, which blows past the tool response budget for bulk calls.\n\n### Expected\nA `compact: true` option that returns only id/state pairs.\n\n### Actual\nEvery call returns the full entity registry entry.\n\n### Steps to reproduce\n```python\nawait call_tool('ha_set_entity', {'entities': [...], 'state': 'off'})\n```\nVersion: 0.4.2",
+      "labels": ["enhancement"],
+      "comments": 4,
+      "created_at": "2026-11-20T22:39:20Z",
+      "updated_at": "2026-11-21T13:33:20Z",
+      "stars": 8031,
+      "language": "Python",
+      "open_issues": 14,
+      "pushed_at": "2026-11-21T10:57:21Z",
+      "comment_author_associations": ["MEMBER", "MEMBER", "CONTRIBUTOR", "NONE"],
+      "competing_open_prs": [],
+      "pulls": [
+        { "number": 3101, "author_association": "CONTRIBUTOR", "created_at": "2026-11-18T01:00:00Z", "merged_at": "2026-11-18T02:20:00Z" },
+        { "number": 3106, "author_association": "CONTRIBUTOR", "created_at": "2026-11-18T09:00:00Z", "merged_at": "2026-11-18T10:10:00Z" },
+        { "number": 3110, "author_association": "FIRST_TIME_CONTRIBUTOR", "created_at": "2026-11-19T04:00:00Z", "merged_at": "2026-11-19T23:00:00Z" },
+        { "number": 3114, "author_association": "CONTRIBUTOR", "created_at": "2026-11-19T12:00:00Z", "merged_at": "2026-11-21T12:00:00Z" },
+        { "number": 3119, "author_association": "CONTRIBUTOR", "created_at": "2026-11-20T02:00:00Z", "merged_at": null },
+        { "number": 3121, "author_association": "MEMBER", "created_at": "2026-11-20T03:00:00Z", "merged_at": "2026-11-20T04:00:00Z" },
+        { "number": 3125, "author_association": "NONE", "created_at": "2026-11-20T06:00:00Z", "merged_at": "2026-11-20T08:30:00Z" },
+        { "number": 3131, "author_association": "CONTRIBUTOR", "created_at": "2026-11-20T18:00:00Z", "merged_at": null },
+        { "number": 3137, "author_association": "FIRST_TIME_CONTRIBUTOR", "created_at": "2026-11-21T01:00:00Z", "merged_at": "2026-11-21T02:30:00Z" },
+        { "number": 3140, "author_association": "MEMBER", "created_at": "2026-11-21T05:00:00Z", "merged_at": null }
+      ]
+    },
+    {
+      "repo": "example-org/agent-sdk",
+      "number": 7052,
+      "title": "[Bug]: glob tool returns nothing for patterns with a directory part",
+      "body": "### Describe the bug\n`glob('src/**/*.ts')` returns an empty list while `glob('*.ts')` works.\n\n### Expected\nMatching files under src/.\n\n### Actual\nEmpty list, no error.\n\n### Steps to reproduce\n```python\nfrom sdk.tools import glob\nglob('src/**/*.ts')\n```\n",
+      "labels": ["bug", "ready-for-dev"],
+      "comments": 2,
+      "created_at": "2026-11-21T13:07:55Z",
+      "updated_at": "2026-11-21T13:11:12Z",
+      "stars": 1416,
+      "language": "Python",
+      "open_issues": 366,
+      "pushed_at": "2026-11-21T13:19:23Z",
+      "comment_author_associations": ["MEMBER", "CONTRIBUTOR"],
+      "competing_open_prs": ["https://github.com/example-org/agent-sdk/pull/7053"],
+      "pulls": [
+        { "number": 7001, "author_association": "CONTRIBUTOR", "created_at": "2026-11-19T00:00:00Z", "merged_at": "2026-11-20T12:00:00Z" },
+        { "number": 7004, "author_association": "CONTRIBUTOR", "created_at": "2026-11-19T05:00:00Z", "merged_at": "2026-11-19T20:00:00Z" },
+        { "number": 7009, "author_association": "FIRST_TIME_CONTRIBUTOR", "created_at": "2026-11-19T09:00:00Z", "merged_at": "2026-11-21T09:00:00Z" },
+        { "number": 7012, "author_association": "CONTRIBUTOR", "created_at": "2026-11-20T01:00:00Z", "merged_at": null },
+        { "number": 7015, "author_association": "MEMBER", "created_at": "2026-11-20T02:00:00Z", "merged_at": "2026-11-20T03:00:00Z" },
+        { "number": 7019, "author_association": "CONTRIBUTOR", "created_at": "2026-11-20T10:00:00Z", "merged_at": "2026-11-21T11:00:00Z" },
+        { "number": 7024, "author_association": "CONTRIBUTOR", "created_at": "2026-11-21T00:30:00Z", "merged_at": null },
+        { "number": 7028, "author_association": "FIRST_TIME_CONTRIBUTOR", "created_at": "2026-11-21T04:00:00Z", "merged_at": null }
+      ]
+    },
+    {
+      "repo": "example-org/design-system",
+      "number": 1204,
+      "title": "Dependency Dashboard",
+      "body": "This issue lists Renovate updates and detected dependencies. Read the Dependency Dashboard docs to learn more.",
+      "labels": ["dependencies", "dependency dashboard"],
+      "comments": 0,
+      "created_at": "2026-11-02T13:12:53Z",
+      "updated_at": "2026-11-21T13:38:13Z",
+      "stars": 2486,
+      "language": "TypeScript",
+      "open_issues": 1,
+      "pushed_at": "2026-11-21T13:35:56Z",
+      "comment_author_associations": [],
+      "competing_open_prs": [],
+      "pulls": [
+        { "number": 1190, "author_association": "CONTRIBUTOR", "created_at": "2026-11-20T01:00:00Z", "merged_at": "2026-11-20T01:12:00Z" },
+        { "number": 1191, "author_association": "MEMBER", "created_at": "2026-11-20T05:00:00Z", "merged_at": "2026-11-20T05:10:00Z" },
+        { "number": 1193, "author_association": "CONTRIBUTOR", "created_at": "2026-11-21T02:00:00Z", "merged_at": "2026-11-21T02:20:00Z" },
+        { "number": 1195, "author_association": "CONTRIBUTOR", "created_at": "2026-11-21T06:00:00Z", "merged_at": null }
+      ]
+    },
+    {
+      "repo": "example-org/support-desk",
+      "number": 473,
+      "title": "Problems connecting FastAPI app to the platform",
+      "body": "It does not work for me. What should I do?",
+      "labels": ["bug"],
+      "comments": 0,
+      "created_at": "2026-11-10T13:58:05Z",
+      "updated_at": "2026-11-11T01:11:38Z",
+      "stars": 119,
+      "language": "Python",
+      "open_issues": 25,
+      "pushed_at": "2026-11-16T22:20:23Z",
+      "comment_author_associations": [],
+      "competing_open_prs": [],
+      "pulls": [
+        { "number": 460, "author_association": "CONTRIBUTOR", "created_at": "2026-11-12T00:00:00Z", "merged_at": "2026-11-13T22:00:00Z" },
+        { "number": 464, "author_association": "CONTRIBUTOR", "created_at": "2026-11-13T00:00:00Z", "merged_at": "2026-11-15T00:00:00Z" },
+        { "number": 468, "author_association": "FIRST_TIME_CONTRIBUTOR", "created_at": "2026-11-14T00:00:00Z", "merged_at": "2026-11-16T00:00:00Z" }
+      ]
+    }
+  ]
+}
